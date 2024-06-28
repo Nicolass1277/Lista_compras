@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Autenticación</title>
+</head>
+<body>
+    <h1>Ejemplo de Autenticación</h1>
+    <div>
+        <h2>Registro</h2>
+        <form id="registerForm">
+            <input type="text" id="registerUsername" placeholder="Nombre de usuario" required>
+            <input type="password" id="registerPassword" placeholder="Contraseña" required>
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+    <div>
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm">
+            <input type="text" id="loginUsername" placeholder="Nombre de usuario" required>
+            <input type="password" id="loginPassword" placeholder="Contraseña" required>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+    </div>
+    <div>
+        <h2>Ruta Protegida</h2>
+        <button id="getUserInfo">Obtener Información del Usuario</button>
+        <div id="userInfo"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
